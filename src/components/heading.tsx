@@ -5,7 +5,7 @@ interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   children?: ReactNode
 }
 
-export const Heading = ({ children, className, ...props }: HeadingProps) => {
+const Heading = ({ children, className, ...props }: HeadingProps) => {
   return (
     <h1
       className={cn(
@@ -18,3 +18,5 @@ export const Heading = ({ children, className, ...props }: HeadingProps) => {
     </h1>
   )
 }
+
+export default Heading
